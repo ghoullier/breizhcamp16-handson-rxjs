@@ -1,0 +1,11 @@
+{
+  "name": "rxjs-hands-on-breizhcamp16",
+  "version": "1.0.0",
+  "description": "Introduction à la Programmation Reactive avec RxJS - BreizhCamp 2016",
+  "private": true,
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
