@@ -4,8 +4,14 @@
   "description": "Introduction à la Programmation Reactive avec RxJS - BreizhCamp 2016",
   "private": true,
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "serve": "lr-http-server -d examples/ -w **/*.html,**/*.js,**/*.css -p 2016 -l 20161"
+  },
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.7.7",
+    "lr-http-server": "^0.1.1"
+  }
 }
