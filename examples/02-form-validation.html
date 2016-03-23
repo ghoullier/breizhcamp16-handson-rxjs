@@ -3,12 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <title>RxJS Hands On Breizhcamp 2016</title>
+    <style>
+      h4 {
+        font-size: 1.125rem;
+      }
+      form {
+        font-size: 0;
+        display: block;
+        border: 1px solid black;
+      }
+      .form-valid {
+        border-color: green;
+      }
+      label {
+        width: 50%;
+        display: inline-block;
+        font-size: 0;
+      }
+      span {
+        width: 25%;
+        display: inline-block;
+        font-size: 1rem;
+      }
+      input {
+        width: 50%;
+        display: inline-block;
+        font-size: 1rem;
+      }
+    </style>
   </head>
   <body>
-    <form>
-      <input type="search" placeholder="search" />
+    <h1>RxJS Hands On Breizhcamp 2016</h1>
+    <form name="callback">
+      <h4>Callback Example</h4>
+      <label><span>Login : </span><input type="text" name="login" /></label>
+      <label><span>Mail : </span><input type="text" name="mail" /></label>
+      <label><span>FirstName : </span><input type="text" name="firstname" /></label>
+      <label><span>LastName : </span><input type="text" name="lastname" /></label>
     </form>
+    <form name="reactive">
+      <h4>Reactive Example</h4>
+      <label><span>Login : </span><input type="text" name="login" /></label>
+      <label><span>Mail : </span><input type="text" name="mail" /></label>
+      <label><span>FirstName : </span><input type="text" name="firstname" /></label>
+      <label><span>LastName : </span><input type="text" name="lastname" /></label>
+    </form>
+    <script src="./vendor/jquery/dist/jquery.js"></script>
+    <script src="./vendor/lodash/dist/lodash.js"></script>
     <script src="./vendor/rxjs/dist/rx.all.js"></script>
+    <script src="./vendor/rxjs-dom/dist/rx.dom.js"></script>
     <script src="./02-form-validation.js"></script>
   </body>
 </html>
