@@ -67,14 +67,20 @@
     return document.querySelector(`[name="${type}"] [type="search"]`)
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
+  const onGetList = ([query, list]) => {
+    document.querySelector('ol').innerHTML = list.map((item) => `<li>${item}</li>`).join('')
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
     // Event Programming test
-    callbackAutocomplete(getNode('callback'), function (value) {
+    callbackAutocomplete(getNode('callback'), (value) => {
       console.log('callback', 'autocomplete', value)
+      onGetList(value)
     })
     // Functional Reactive Programming test
-    reactiveAutocomplete(getNode('reactive'), function (value) {
+    reactiveAutocomplete(getNode('reactive'), (value) => {
       console.log('reactive', 'autocomplete', value)
+      onGetList(value)
     })
   })
 }(jQuery, _, Rx))

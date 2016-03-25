@@ -12,6 +12,19 @@
   "license": "MIT",
   "dependencies": {
     "bower": "^1.7.7",
+    "express": "^4.13.4",
     "lr-http-server": "^0.1.1"
-  }
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghoullier/rxjs-hands-on-breizhcamp16.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ghoullier/rxjs-hands-on-breizhcamp16/issues"
+  },
+  "homepage": "https://github.com/ghoullier/rxjs-hands-on-breizhcamp16#readme"
 }
